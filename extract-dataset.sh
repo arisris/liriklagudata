@@ -5,6 +5,6 @@ if [ -d "$DIR" ]; then
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "Begin Extracting data to ${DIR}"
-  tar -xvf ./dataset/data.tar.bz2 ./public
+  tar -xvf ./dataset/data.tar.bz2 --directory ./public
   echo "Success extracting data to ${DIR}"
 fi
